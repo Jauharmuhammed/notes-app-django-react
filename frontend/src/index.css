@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .notes div:nth-child(odd) {
+   background-color:  #DDE596;
+  }
+  .notes div:nth-child(even) {
+    background-color: #80BEB0;
+  }
+  .notes div:nth-child(3n) {
+    background-color: #fe6678;
+  }
+  .notes div:nth-child(4n) {
+    background-color: #AFD4D5;
+  }
+  .notes div:nth-child(5n) {
+    background-color: #6BC7E5;
+  }
+  .notes div:nth-child(6n) {
+    background-color: #6F88A2;
+  }
+  .notes div:nth-child(7n) {
+    background-color: #d7a548;
+  }
+  .notes div:nth-child(8n) {
+    background-color: #FCCACF;
+  }
+  .notes div:nth-child(9n) {
+    background-color: #C68FD1;
+  }
+  .notes div:nth-child(10n) {
+    background-color: #FFE0A2;
+  }
+  .notes div:nth-child(11n) {
+    background-color: #DEF3A1;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
