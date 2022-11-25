@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2@bcc3sk4$j^i2x9*#b7%o0ms#ys9wc^mq!oc26$355qzxl^e@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['notes-django-react.up.railway.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
