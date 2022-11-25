@@ -129,9 +129,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# django will check for static files here if debug set to True
 STATICFILES_DIRS = [
     BASE_DIR / 'frontend/build/static'
 ]
+
+# django will check for static files here if debug set to False or Production Environment
+# also you need to configure urls.py and whitenoise to work this
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
