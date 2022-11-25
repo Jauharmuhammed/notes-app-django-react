@@ -71,7 +71,7 @@ const NotePage = () => {
         >
           <MdArrowBackIosNew className="text-white text-xl " />
         </div>
-        <div className="dark:text-white">{getTime(note)}</div>
+        <div className="dark:text-white">{id !=='new' && getTime(note)}</div>
         {id === 'new' ? (<button
           onClick={handleUpdate}
           className="text-white py-2 px-3  rounded-xl bg-gray-700"
