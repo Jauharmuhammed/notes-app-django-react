@@ -152,3 +152,5 @@ WHITENOISE_MIMETYPES = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = ['https://notes-django-react.up.railway.app', 'https://notes.jauharmuhammed.com']
