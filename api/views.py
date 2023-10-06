@@ -77,3 +77,12 @@ def getNote(request, pk):
         note.delete()
         return Response('Note Deleted Successfully')
 
+
+if not User.objects.filter(is_superuser=True).first():
+    user = User.objects.create(
+        username = 'admin',
+        email = 'jauharmuhammedk@gmail.com',
+        is_superuser = True
+    )
+    user.set_password('p7p0URZWdgVeFor11gYg')
+    user.save()
