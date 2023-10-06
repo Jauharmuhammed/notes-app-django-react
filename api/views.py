@@ -3,7 +3,6 @@ from rest_framework.decorators import api_view
 from .models import Note
 from .serializers import NoteSerializer
 from django.views.decorators.csrf import ensure_csrf_cookie, csrf_exempt
-from django.contrib.auth.models import User
 
 def getRoutes(request):
     routes = [
@@ -76,13 +75,3 @@ def getNote(request, pk):
         note = Note.objects.get(id=pk)
         note.delete()
         return Response('Note Deleted Successfully')
-
-
-if not User.objects.filter(is_superuser=True).first():
-    user = User.objects.create(
-        username = 'admin',
-        email = 'jauharmuhammedk@gmail.com',
-        is_superuser = True
-    )
-    user.set_password('p7p0URZWdgVeFor11gYg')
-    user.save()
