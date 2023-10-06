@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from .models import Note
 from .serializers import NoteSerializer
 from django.views.decorators.csrf import ensure_csrf_cookie, csrf_exempt
-
+from django.contrib.auth.models import User
 
 def getRoutes(request):
     routes = [
